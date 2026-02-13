@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+p#count {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #000; /* Color will be updated by JS */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button#decreaseBtn {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+}
+
+button#increaseBtn {
+    background-color: #32cd32; /* LimeGreen */
+    color: white;
+}
+
+button#resetBtn {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+}
