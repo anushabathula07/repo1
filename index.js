@@ -1,39 +1,32 @@
 // Select elements
-const countDisplay = document.getElementById('count');
-const decreaseBtn = document.getElementById('decreaseBtn');
-const resetBtn = document.getElementById('resetBtn');
-const increaseBtn = document.getElementById('increaseBtn');
 
-// Initialize the counter variable
-let count = 10;
+let count = 0; // Initialize the counter variable
+const countDisplay = document.getElementById("count"); // Get the element that displays the count
+const MAX_COUNT = 10;
+const MIN_COUNT = 0;
 
-// Function to update the display and color
 function updateDisplay() {
-    countDisplay.textContent = count;
-    if (count > 0) {
-        countDisplay.style.color = 'green';
-    } else if (count < 0) {
-        countDisplay.style.color = 'red';
-    } else {
-        countDisplay.style.color = 'black';
+    countDisplay.textContent = count; // Update the display with the current count
+}
+
+function increase() {
+    if (count < MAX_COUNT) {
+        count++; // Increment only if less than 10
+        updateDisplay();
     }
 }
 
-// Add event listeners
-increaseBtn.addEventListener('click', () => {
-    count++;
-    updateDisplay();
-});
+function decrease() {
+    if (count > MIN_COUNT) {
+        count--; // Decrement only if greater than 0
+        updateDisplay();
+    }
+}
 
-decreaseBtn.addEventListener('click', () => {
-    count--;
+function reset() {
+    count = 0; // Set count to 0
     updateDisplay();
-});
-
-resetBtn.addEventListener('click', () => {
-    count = 0;
-    updateDisplay();
-});
+}
 
 // Initial display update
 updateDisplay();
