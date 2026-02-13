@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App </title>
-    <link rel="stylesheet" href="index.css"> <!-- Links the CSS file -->
+    <title>Counter App up to 10</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Counter</h1>
+    <div class="counter-container">
+        <h1>Counter App</h1>
         <p id="count">0</p>
-        <button id="decreaseBtn">Decrease</button>
-        <button id="resetBtn">Reset</button>
-        <button id="increaseBtn">Increase</button>
+        <div class="buttons">
+            <button onclick="decrease()">-</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="increase()">+</button>
+        </div>
     </div>
-    <script src="index.js"></script> <!-- Links the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

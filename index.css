@@ -1,16 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
 }
 
-.container {
-    background-color: #fff;
+.counter-container {
+    text-align: center;
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -23,12 +23,12 @@ h1 {
 p#count {
     font-size: 48px;
     margin: 20px 0;
-    color: #000; /* Color will be updated by JS */
+    color: #007bff;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 24px;
     margin: 5px;
     cursor: pointer;
     border: none;
@@ -36,17 +36,10 @@ button {
     transition: background-color 0.3s;
 }
 
-button#decreaseBtn {
-    background-color: #ff6347; /* Tomato */
-    color: white;
+button:hover {
+    opacity: 0.8;
 }
 
-button#increaseBtn {
-    background-color: #32cd32; /* LimeGreen */
-    color: white;
-}
-
-button#resetBtn {
-    background-color: #4682b4; /* SteelBlue */
-    color: white;
-}
+button:nth-child(1) { background-color: #dc3545; color: white; } /* Decrease button */
+button:nth-child(2) { background-color: #ffc107; color: black; } /* Reset button */
+button:nth-child(3) { background-color: #28a745; color: white; } /* Increase button */
