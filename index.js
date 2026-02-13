@@ -5,7 +5,7 @@ const resetBtn = document.getElementById('resetBtn');
 const increaseBtn = document.getElementById('increaseBtn');
 
 // Initialize the counter variable
-let count = 0;
+let count = 10;
 
 // Function to update the display and color
 function updateDisplay() {
